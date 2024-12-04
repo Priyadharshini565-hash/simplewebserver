@@ -3,32 +3,42 @@ from http.server import HTTPServer,BaseHTTPRequestHandler
 content='''
 
 <html>
-    <boby>
-    <form>
-        <label>Work Application Form</label><br><br>
-        <label>Designation*</label>
-        <select>
-            <option>Manager</option><option>Developer</option><option>Tester</option>
-        </select><br><br>
+    <head>
+        <center>
+        <tittle>
+           <b>LAPTOP CONFIGURATION</b>
+            </tittle>
+        </head>
+        <boby>
+            <table border="2" cellpadding="10">
+            <tr> 
+                <td>Brand</td>       
+                <td>Lenovo</td>
+                </tr>
+                <tr>
+                <td>Series</td>
+                <td>ThinkPad E16 Gen1</td>
+                </tr>
+                <tr>
+                    <td>Processor Brand</td>
+                    <td>INTEL</td>
+                    </tr>
+                    <tr>
+                        <td>Processor Type</td>
+                        <td>Core 15</td>
+                        </tr> 
+                        <tr>
+                            <td>Graphics Card Interface</td>
+                            <td>Integrated</td>
+                            </tr>
+                            <tr>
+                                <td>Operating System</td>
+                                <td>Windows 11 Home</td>
+                                </tr> 
+        </table>
+   
 
-        <label>Applicant Name*</label>
-        <input type="Applicant Name"><br><br>
-
-        <label>Date of Birth*</label>
-        <input type="date"><br><br><br>
-
-        <label>Education Details</label><br><br>
-        <input type="checkbox">PG<br>
-        <input type="checkbox">UG<br>
-        <input type="checkbox">HSC<br><br><br>
-        
-        <label>Resume Upload*</label>
-        <input type="file">
-        <br>
-            About yourself:
-            <textarea rows="4 cols=50"></textarea>
-        </form>
-    </boby>
+</html>
 '''
 
 class MyServer(BaseHTTPRequestHandler):
